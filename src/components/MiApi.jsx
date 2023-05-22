@@ -25,11 +25,18 @@ const MiApi = ({ filteredInfo }) => {
       console.log("Error fetching data:", error);
     }
   };
+
+  //filtrado de pokemones
+  const filterPokemon = info.filter((item) => {
+    const filteredItem = filteredInfo.toLowerCase()
+    return item.name.toLowerCase().includes(filteredItem) 
+  })
+
   return (
     <div className="row">
       {/* renderizo los datos recibidos de la API */}
       {info &&
-        info.map((item) => (
+        filterPokemon.map((item) => (
           <div key={item.id} className="card m-2" style={{ width: "10rem" }}>
             <div className="card-body">
               <p className="card-text">{item.name}</p>
