@@ -1,6 +1,6 @@
-#ENLACE PARA VIDEO EXPLICATIVO
+# ENLACE PARA VIDEO EXPLICATIVO
 
-[Ver Video](https://youtu.be/HDIokywt3n0).
+Prueba módulo React 1 [Ver Video](https://youtu.be/HDIokywt3n0).
 
 
 
